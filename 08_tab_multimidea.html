@@ -5,8 +5,29 @@
     <title>Tabelas Avançadas e Multimídia</title>
     <style>
 
-        /* Começar digitação (Aqui) */
-  
+       table {
+        width: 50%; /*Largura de 50% da tela*/
+        border-collapse: collapse; /*Remove o espaçamento entre as bordas*/
+        margin-bottom: 20px; /*Espaço inferior para separar da próxima*/
+       }
+       th, td { 
+        border: 1px solid black;
+        padding: 8px; /*espaçamnto interno*/
+       }
+       th{
+        background-color: #333;
+        color: white;
+       }
+    
+       tfoot{
+        background-color: #ff9;
+        font-weight: bold; /*Negrito*/
+       }
+
+       td.num-right {
+        text-align: center;
+       }
+
     </style>
 </head>
 <body>
@@ -30,31 +51,43 @@
         <tbody>
             <tr>
                 <!-- Linha de dados para a região Norte -->
-                <td>Norte</td>
-                <td>R$ 10.000</td>
-                <td>R$ 12.000</td>
-                <td>R$ 15.000</td>
-                <td><strong>R$ 37.000</strong></td>
+                <td class="num-right">Norte</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right"><strong>R$ 37.000</strong></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <!-- Rodapé com total geral -->
-                <td>Total Geral</td>
-                <td>R$ 10.000</td>
-                <td>R$ 12.000</td>
-                <td>R$ 15.000</td>
-                <td>R$ 37.000</td>
+                <td class="num-right">Total Geral</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right">R$ 37.000</td>
             </tr>
         </tfoot>
     </table>
     
     <hr>
 
-    <!-- Continuar digitação (Aqui) -->
+   <h2>Inserindo videos locais</h2>
+   <video width="500" poster="assets/limoes-capa.png" controls>
+    <source src="assets/meu-video.mp4" type="video/mp4">
+    Seu navegador não suporta videos.
+   </video>
+
+   <br>
+
+
 
     <!-- MULTIMÍDIA EM HTML5 -->
-
+<iframe width="500" height="315"
+src="https://youtu.be/CoJxgs3yneI?si=gIZaOjxCpajY4jlU"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
 
     <!-- Inserindo vídeos do YouTube -->
@@ -63,7 +96,10 @@
 
     <!-- Reproduzir áudios  -->
 
-  
+   <audio preload="metadata" autoplay controls>
+    <source src="assets/happy-mistake.mp3" types="audio/mpeg">
+    Seu navegador não suporta audio
+   </audio>
 
 </body>
 </html>
