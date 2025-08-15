@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <h1>Formulario de cadastro</h1>
+
+        <form action="processar.php" placeholder="Digite seu nome" method="post">
+
+        <label for="nome">Nome completo</label> <br>
+        <input type="text" id="nome" name="nome" required><br>
+        
+        <label for="E-Mail">E-mail</label> <br>
+        <input type="email" id="E-Mail" name="E-Mail" placeholder="Digite seu e-mail" required><br>
+
+        <label for="senha">Senha</label> <br>
+        <input type="password" id="senha" name="senha" placeholder="Digite a senha" required><br>
+
+        <hr>
+
+        <label>Sexo</label><br>
+        <input type="radio" id="masculino" name="sexo" value="M">
+            <label for="masculino">Masculino</label><br>
+    
+            <label type="radio" id="feminino" name="sexo" value="F"></label>
+        <input type="radio" id="masculino" name="sexo" value="M">
+            <label for="feminino">Feminino</label><br>
+
+            <hr>
+
+
+            <label>Interesse</label><br>
+
+            <input type="checkbox" id="programacao" name="interesse" value="programacao">
+            <label for="programacao">Programação</label><br>
+
+            <input type="checkbox" id="design" name="interese" value="esportes">
+            <label for="esportes"> Esportes </label><br>
+
+            <input type="checkbox" id="Design" name="Design" value="Design">
+            <label for="Design">Design</label><br>
+
+            <hr> 
+
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="sp">São paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="ba">Bahia</option>
+            <option value="es">Espitiro Santo</option>
+            <option value="pa">Pará</option>
+            </select>
+
+            <label for="comentarios"></label><br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea>
+            
+        </form>
+</body>
+</html>
