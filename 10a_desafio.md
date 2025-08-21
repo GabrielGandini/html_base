@@ -1,4 +1,4 @@
-# Mini Desafio HTML Avançado - Portal de Notícias Tech 📱
+ # Mini Desafio HTML Avançado - Portal de Notícias Tech 📱
 
 ## 📋 Descrição do Desafio
 
